@@ -1,0 +1,143 @@
+* {
+  margin: 0px;
+  padding: 0%;
+}
+
+.scene {
+  background-size: 100%;
+  background-position: relative;
+}
+
+.sceneImage {
+  width: 100%;
+  height: 100%;
+}
+.car {
+  height: 50px;
+  width: 60px;
+  margin-top: -390px;
+  margin-left: 100px;
+  animation: moveCar 10s linear infinite;
+}
+
+.carImage {
+  height: 250px;
+  width: 250px;
+  margin-top: 100px;
+}
+
+.wheel {
+  left: 179px;
+  bottom: 77px;
+  position: absolute;
+  z-index: 2;
+}
+
+.wheel img {
+  height: 40px;
+  top: -120px;
+}
+
+.front {
+  position: absolute;
+  left: 99px;
+  transform: rotate(360deg);
+  animation: frontWheel 10s linear infinite;
+}
+.back {
+  position: absolute;
+  left: -49px;
+  transform: rotate(360deg);
+  animation: backWheel 10s linear infinite;
+}
+
+.miniBus {
+  width: 20px;
+  height: 10px;
+  margin-top: 150px;
+  margin-right: 100px;
+  animation: moveMiniBus 8s linear infinite;
+  animation-fill-mode: backwards;
+}
+
+.miniBusImg {
+  height: 250px;
+  width: 300px;
+  top: 120px;
+}
+
+.aeroplane {
+  width: 500px;
+  height: 100px;
+  animation-fill-mode: backwards;
+  animation: moveAeroplane 8s linear infinite;
+  top: 10px;
+}
+
+.aeroplaneImg {
+  height: 50px;
+  width: 100px;
+  position: absolute;
+  top: 7px;
+  margin-bottom: 100px;
+}
+
+.cloud {
+  width: 100px;
+  height: 100px;
+  top: 10px;
+}
+.cloud img {
+  top: 7px;
+  margin-bottom: 1000px;
+  position: absolute;
+}
+
+@keyframes moveCar {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 1400px;
+  }
+}
+@keyframes frontWheel {
+  from {
+    transform: rotate(0deg);
+    margin-left: 250px;
+  }
+  to {
+    transform: rotate(360deg);
+    margin-left: 1650px;
+  }
+}
+@keyframes backWheel {
+  from {
+    transform: rotate(0deg);
+    margin-left: 10px;
+  }
+  to {
+    transform: rotate(360deg);
+    margin-left: 1400px;
+  }
+}
+
+@keyframes moveMiniBus {
+  from {
+    margin-left: 1400px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
+
+@keyframes moveAeroplane {
+  from {
+    margin-left: 1400px;
+    margin-top: 100px;
+  }
+  to {
+    margin-left: 10px;
+    margin-top: 100px;
+  }
+}

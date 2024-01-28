@@ -1,0 +1,96 @@
+.card1 {
+  background-color: yellowgreen;
+  /* height: 70px;
+  width: 50px; */
+  margin-top: 160px;
+  margin-left: 390px;
+  padding: 32px 20px 71px 30px;
+  float: left;
+}
+
+.card2 {
+  background-color: blueviolet;
+  /* height: 70px;
+  width: 50px; */
+  float: left;
+  margin-top: 174px;
+  margin-left: -112px;
+  padding: 32px 20px 71px 30px;
+}
+
+.card3 {
+  background-color: violet;
+  /* height: 70px;
+  width: 50px; */
+  margin-top: 189px;
+  margin-left: -130px;
+  padding: 32px 20px 71px 30px;
+  float: left;
+}
+
+.card4 {
+  background-color: rgb(243, 199, 117);
+  /* height: 70px;
+  width: 50px; */
+  margin-top: 201px;
+  margin-left: -145px;
+  padding: 32px 20px 71px 30px;
+  float: left;
+}
+
+/* .veritical {
+  height: 500px;
+  width: 1px;
+  background-color: black;
+  margin-right: 45px;
+} */
+
+.box1 {
+  background-color: yellowgreen;
+  height: 70px;
+  width: 50px;
+  margin-left: 570px;
+  margin-top: 40px;
+  padding: 25px;
+  float: left;
+}
+
+.box2 {
+  background-color: rgb(3, 247, 255);
+  height: 70px;
+  width: 50px;
+  margin-left: -113px;
+  margin-top: 53px;
+  padding: 25px;
+  float: left;
+}
+
+.box3 {
+  background-color: rgb(161, 50, 205);
+  height: 70px;
+  width: 50px;
+  margin-left: -124px;
+  margin-top: 66px;
+  padding: 25px;
+  float: left;
+}
+
+.box4 {
+  background-color: yellow;
+  height: 70px;
+  width: 50px;
+  margin-left: -138px;
+  margin-top: 80px;
+  padding: 25px;
+  float: left;
+}
+
+/* .container1 {
+  display: flex;
+  width: 50%;
+}
+
+.container2 {
+  display: flex;
+  width: 50%;
+} */

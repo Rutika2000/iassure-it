@@ -1,0 +1,92 @@
+.flag {
+  width: 350px;
+  height: 200px;
+  margin: auto;
+  margin-top: 50px;
+  border: solid 1px black;
+  box-shadow: 0px 0px 90px 1px rgb(92, 84, 92);
+}
+
+.orange {
+  height: 33.33%;
+  border: solid 1px black;
+  background-color: orange;
+}
+
+.white {
+  height: 33.34%;
+  border: solid 0px;
+  background-color: white;
+}
+
+.green {
+  height: 33.33%;
+  border: solid 0.7px black;
+  background-color: green;
+}
+
+.circle {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin: auto;
+  border: solid 2px blue;
+  transform: scale(0.2);
+  margin-top: -250px;
+}
+
+.line {
+  height: 0px;
+  width: 300px;
+  margin: auto;
+  border: solid 2px blue;
+  margin-top: -6px;
+  float: left;
+}
+.vline {
+  height: 300px;
+  width: 0px;
+  margin: auto;
+  border: solid 2px blue;
+}
+
+.hline {
+  height: 0px;
+  width: 300px;
+  border: solid 2px blue;
+  margin: auto;
+  margin-top: -152px;
+}
+
+.r0 {
+  transform: rotate(15deg);
+}
+
+.r1 {
+  transform: rotate(30deg);
+}
+
+.r2 {
+  transform: rotate(45deg);
+}
+.r3 {
+  transform: rotate(60deg);
+}
+.r4 {
+  transform: rotate(75deg);
+}
+.r5 {
+  transform: rotate(-15deg);
+}
+.r6 {
+  transform: rotate(-30deg);
+}
+.r7 {
+  transform: rotate(-45deg);
+}
+.r8 {
+  transform: rotate(-60deg);
+}
+.r9 {
+  transform: rotate(-75deg);
+}

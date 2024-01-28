@@ -1,0 +1,395 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sky {
+  background-color: rgb(183, 234, 255);
+  background-image: radial-gradient(#ff7518 12%, #f6a904 40%, #ee9b0c 70%);
+  height: 320px;
+}
+
+/* .clouds {
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  animation: clouds 45s linear infinite;
+}
+
+@keyframes clouds {
+  from {
+    margin-left: 1000px;
+  }
+  to {
+    margin-left: 10px;
+  }
+} */
+
+.birds .birds1 {
+  height: 50px;
+  position: absolute;
+  animation: birds 45s linear infinite;
+  z-index: 2;
+}
+
+@keyframes birds {
+  from {
+    margin-left: 1000px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
+
+.sun {
+  border-radius: 50%;
+  /* background-color: #ff7518; */
+  margin-top: 120px;
+  margin-left: 750px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 35px #ffbb00, 0 0 25px #ffcc00 inset;
+}
+
+.scene img {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  height: 320px;
+}
+
+.water {
+  background-color: #a9e7e7f4;
+  background-image: linear-gradient(
+    rgb(183, 234, 255),
+    rgb(50, 160, 211),
+    rgb(33, 221, 221)
+  );
+  height: 409px;
+}
+
+.boat1 {
+  height: 300px;
+  position: absolute;
+  z-index: 999;
+  top: 7%;
+  animation: boat 4s linear infinite;
+}
+
+@keyframes boat {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 409px;
+  overflow: hidden;
+  /* background: #3586ff; */
+}
+section .wave {
+  position: absolute;
+  /* bottom: 0px; */
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(/Images/wave4.png);
+  background-size: 1000px 100px;
+}
+
+section .wave.wave1 {
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 0.7;
+  animation-delay: 0s;
+  /* bottom: 0; */
+}
+
+.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  /* bottom: 10px; */
+}
+
+.wave3 {
+  animation: animate3 15s linear infinite;
+  z-index: 998;
+  opacity: 0.3;
+  animation-delay: -2s;
+  /* bottom: 15px; */
+}
+.wave4 {
+  animation: animate4 15s linear infinite;
+  z-index: 997;
+  opacity: 0.18;
+  animation-delay: -1s;
+  /* bottom: 15px; */
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+@keyframes animate3 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes animate4 {
+    0% {
+      background-position-x: 0;
+    }
+    100% {
+      background-position-x: -1000px;
+    }
+  }
+  
+.island {
+  position: absolute;
+  top: 34%;
+  right: 0;
+  transform: translate(0%, 50%);
+  height: 70px;
+  width: 350px;
+  border-radius: 100px 100px 0 0;
+  background-color: rgba(127, 35, 35);
+  z-index: 1000;
+}
+
+.trees .coconut {
+  position: absolute;
+  /* top: -100px; */
+  bottom: 40px;
+}
+
+/* .diver {
+  position: relative;
+} */
+.diver .diver1 {
+  height: 250px;
+  position: absolute;
+  bottom: 60px;
+  animation: diver1 50s linear infinite;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+.diver .diver2 {
+  height: 200px;
+  position: absolute;
+  bottom: 10px;
+  animation: diver2 16s linear infinite;
+  margin: auto;
+  left: 40%;
+}
+
+@keyframes diver1 {
+  from {
+    margin-left: 0px;
+  }
+  to {
+    margin-left: 1300px;
+  }
+}
+@keyframes diver2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.plants .plant1 {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+.plants .plant2 {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.plants .plant3 {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 75px;
+}
+
+.plants .plant4 {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 55px;
+}
+
+.plants .plant5 {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 75px;
+}
+
+.plants .plant6 {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 75px;
+}
+
+.stone {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+.fishes .fish1 {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  animation: fish1 15s linear infinite;
+}
+
+.fish2 {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  animation: fish1 50s linear infinite;
+}
+
+.fish3 {
+  height: 50px;
+  position: absolute;
+  bottom: 15px;
+  animation: fish1 55s linear infinite;
+}
+.fish4 {
+  height: 50px;
+  position: absolute;
+  bottom: -10px;
+  animation: fish1 45s linear infinite;
+}
+
+.fish5 {
+  height: 50px;
+  position: absolute;
+  bottom: 265px;
+  animation: fish5 45s linear infinite;
+}
+.fish6 {
+  height: 38px;
+  position: absolute;
+  bottom: 215px;
+  animation: fish5 45s linear infinite;
+}
+.fish7 {
+  height: 30px;
+  position: absolute;
+  bottom: 245px;
+  animation: fish5 45s linear infinite;
+}
+.fish8 {
+  height: 50px;
+  position: absolute;
+  bottom: 200px;
+  animation: fish8 180s linear infinite;
+}
+.fish9 {
+  height: 50px;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  /* animation: fish1 45s linear infinite; */
+}
+
+@keyframes fish1 {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 1400px;
+  }
+}
+
+@keyframes fish2 {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 1400px;
+  }
+}
+
+@keyframes fish3 {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 1400px;
+  }
+}
+
+@keyframes fish4 {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 1400px;
+  }
+}
+
+@keyframes fish5 {
+  from {
+    margin-left: 1400px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
+@keyframes fish8 {
+  from {
+    margin-left: 1400px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,94 @@
+.spinner {
+  background-color: rgb(74, 193, 0);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 25px solid white;
+  border-top: 20px solid rgb(176, 9, 205);
+  margin: auto;
+  margin-top: 100px;
+}
+.spinner:hover {
+  background-color: rgb(173, 238, 83);
+  text-align: center;
+  animation: example 4s linear;
+}
+
+.wrapper:hover {
+  /* border: solid 1px black; */
+}
+
+.centre {
+  position: absolute;
+  margin: auto;
+  margin-top: 270px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  height: 250px;
+  background-color: rgb(255, 0, 166);
+  box-shadow: 0px 0px 50px 3px #000;
+}
+.card1 {
+  transform: rotate(45deg);
+  width: 250px;
+  height: 250px;
+  background-color: rgb(204, 80, 171);
+  margin: auto;
+  margin-top: -60px;
+}
+.card1:hover {
+  background-image: radial-gradient(#ff00ff, #ff66ff, #ffaaff);
+  animation: ani 2.5s linear;
+  transition: all 4s;
+}
+
+.card2 {
+  transform: rotate(60deg);
+  width: 215px;
+  height: 215px;
+  background-color: rgb(209, 146, 189);
+  margin: auto;
+  margin-top: -230px;
+}
+.card2:hover {
+  background-image: radial-gradient(#ff00ff, #ff66ff, #ffaaff);
+  animation: ani 2.5s linear;
+}
+
+.card3 {
+  transform: rotate(75deg);
+  width: 190px;
+  height: 190px;
+  background-color: rgb(233, 113, 201);
+  margin: auto;
+  margin-top: -190px;
+}
+.card3:hover {
+  background-image: radial-gradient(#ff00ff, #ff66ff, #ffaaff);
+  animation: ani 2.5s linear;
+}
+
+@keyframes ani {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes example {
+  from {
+    transform: rotate(0deg);
+
+    background-color: rgb(74, 193, 0);
+  }
+  to {
+    transform: rotate(360deg);
+
+    background-color: rgb(177, 238, 57);
+  }
+}
