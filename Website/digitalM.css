@@ -1,0 +1,165 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* body {
+  justify-content: end;
+  align-content: end;
+  min-height: 100vh;
+  background: #e8e8e8;
+} */
+
+img {
+  width: 100%;
+}
+
+/*------------------------------------------------------------ header ---------------------------------------------------------------------*/
+
+header {
+  background-color: #33333391;
+  filter: blur();
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -1000px;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+nav {
+  flex-grow: 1;
+  text-align: center;
+  filter: blur();
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+#helpline {
+  display: flex;
+  align-items: center;
+}
+
+#helpline span {
+  margin-right: 10px;
+}
+
+#search,
+#cart {
+  margin-left: 20px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  width: 150px;
+}
+
+.banner .line1 {
+  font-size: 10px;
+}
+
+.banner .line2 {
+  font-size: 40px;
+}
+.banner button {
+  background-color: gold;
+  width: 130px;
+  height: 50px;
+}
+
+/*------------------------------------------------------------ footer -----------------------------------------------------------------*/
+
+.footer {
+  /* margin-top: -1000px; */
+  height: 300px;
+  position: relative;
+  left: 0;
+  bottom: -500px;
+  width: 100%;
+  background-color: rgb(4, 25, 12);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.footer .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 1px;
+}
+
+.footer .container .sec h2 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer .container .sci li {
+  list-style: none;
+}
+.footer .container .sci li a {
+  display: inline-block;
+  width: 360px;
+  height: 36px;
+  background: #333;
+  display: grid;
+  align-content: center;
+  text-decoration: none;
+}
+
+.footer .container .sci li a i {
+  color: #fff;
+  font-size: 20px;
+  float: left;
+}
+
+.sec .newsletter {
+}
+.sec .aboutus p {
+}
+
+.sec .contacts li {
+}
+
+.sec .explore li {
+}
+
+li {
+  color: grey;
+}
+input[type="email"] {
+  padding: 10px;
+  width: 200px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-items {
+  width: 100px;
+}

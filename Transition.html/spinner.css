@@ -11,11 +11,11 @@
 .spinner:hover {
   background-color: rgb(173, 238, 83);
   text-align: center;
-  animation: example 4s linear;
+  animation: spinner 4s linear;
 }
 
 .wrapper:hover {
-  /* border: solid 1px black; */
+  
 }
 
 .centre {
@@ -80,7 +80,7 @@
   }
 }
 
-@keyframes example {
+@keyframes spinner {
   from {
     transform: rotate(0deg);
 
@@ -92,3 +92,17 @@
     background-color: rgb(177, 238, 57);
   }
 }
+
+
+/* @keyframes spinner {
+  from {
+    transform: rotate(0deg);
+
+    background-color: rgb(74, 193, 0);
+  }
+  to {
+    transform: rotate(360deg);
+
+    background-color: rgb(177, 238, 57);
+  }
+}  */

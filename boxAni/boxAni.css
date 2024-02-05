@@ -1,0 +1,173 @@
+.rowone {
+  display: flex;
+  margin-left: 500px;
+}
+
+.rowone .one {
+  height: 100px;
+  width: 100px;
+  border: 2px solid pink;
+  background-color: deeppink;
+  margin-top: 110px;
+  margin-left: 50px;
+}
+
+.rowone .two {
+  height: 100px;
+  width: 100px;
+  border: 2px solid pink;
+  background-color: deeppink;
+  margin-top: 110px;
+  margin-left: 50px;
+}
+.rowone .three {
+  height: 100px;
+  width: 100px;
+  border: 2px solid pink;
+  background-color: deeppink;
+  margin-top: 110px;
+  margin-left: 50px;
+}
+
+.rowtwo {
+  display: flex;
+  margin-left: 500px;
+  /* margin-top: 250px; */
+}
+
+.rowtwo .one {
+  height: 100px;
+  width: 100px;
+  border: 2px solid pink;
+  background-color: deeppink;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+
+.rowtwo .two {
+  height: 100px;
+  width: 100px;
+  border: 2px solid pink;
+  background-color: deeppink;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+.rowtwo .three {
+  height: 100px;
+  width: 100px;
+  border: 2px solid pink;
+  background-color: deeppink;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+
+.rowthree {
+  display: flex;
+  margin-left: 500px;
+  /* margin-top: 250px; */
+}
+
+.rowthree .one {
+  height: 100px;
+  width: 100px;
+  border: 2px solid pink;
+  background-color: deeppink;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+
+.rowthree .two {
+  height: 100px;
+  width: 100px;
+  border: 2px solid pink;
+  background-color: deeppink;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+.rowthree .three {
+  height: 100px;
+  width: 100px;
+  border: 2px solid pink;
+  background-color: deeppink;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+
+.a1:hover {
+  animation: a1 1s linear;
+}
+
+@keyframes a1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+.a2:hover {
+  animation: a2 1s linear;
+}
+
+@keyframes a2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+.a3:hover {
+  animation: a3 1s linear;
+}
+
+@keyframes a3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+.a3:hover {
+    animation: a3 1s linear;
+  }
+  
+  @keyframes a3 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+
+  .a3:hover {
+    animation: a3 1s linear;
+  }
+  
+  @keyframes a3 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+
+  .a3:hover {
+    animation: a3 1s linear;
+  }
+  
+  @keyframes a3 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(90deg);
+    }
+  }
+  

@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  /* overflow: hidden; */
 }
 
 .container {
@@ -34,7 +35,14 @@
 .birds .birds1 {
   height: 50px;
   position: absolute;
-  animation: birds 45s linear infinite;
+  animation: birds 65s linear infinite;
+  z-index: 2;
+}
+
+.birds .birds2 {
+  height: 60px;
+  position: absolute;
+  animation: birds 65s linear infinite;
   z-index: 2;
 }
 
@@ -67,19 +75,23 @@
 .water {
   background-color: #a9e7e7f4;
   background-image: linear-gradient(
-    rgb(183, 234, 255),
-    rgb(50, 160, 211),
+    rgb(126 205 238),
+    rgb(44 159 212),
     rgb(33, 221, 221)
   );
   height: 409px;
 }
 
+.boat {
+  /* animation: moveBoat 60s linear infinite; */
+}
 .boat1 {
   height: 300px;
   position: absolute;
   z-index: 999;
   top: 7%;
   animation: boat 4s linear infinite;
+  animation: moveBoat 60s linear infinite;
 }
 
 @keyframes boat {
@@ -90,6 +102,42 @@
     transform: rotate(5deg);
   }
   100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes moveBoat {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 800px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+.boat2 {
+  height: 180px;
+  position: absolute;
+  z-index: 998;
+  top: 185px;
+  animation: moveBoat2 80s linear infinite;
+  animation: boat 4s linear infinite;
+  bottom: 10x;
+}
+@keyframes moveBoat2 {
+  0% {
+    /* margin-right: 0; */
+    transform: rotate(0deg);
+  }
+  50% {
+    /* margin-right: 800px; */
+    transform: rotate(5deg);
+  }
+  100% {
+    /* margin-right: 0px; */
     transform: rotate(0deg);
   }
 }
@@ -114,7 +162,7 @@ section .wave {
 section .wave.wave1 {
   animation: animate 30s linear infinite;
   z-index: 1000;
-  opacity: 0.7;
+  opacity: 0.5;
   animation-delay: 0s;
   /* bottom: 0; */
 }
@@ -122,7 +170,7 @@ section .wave.wave1 {
 .wave2 {
   animation: animate2 15s linear infinite;
   z-index: 999;
-  opacity: 0.5;
+  opacity: 0.7;
   animation-delay: -5s;
   /* bottom: 10px; */
 }
@@ -168,14 +216,14 @@ section .wave.wave1 {
   }
 }
 @keyframes animate4 {
-    0% {
-      background-position-x: 0;
-    }
-    100% {
-      background-position-x: -1000px;
-    }
+  0% {
+    background-position-x: 0;
   }
-  
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
 .island {
   position: absolute;
   top: 34%;
@@ -184,7 +232,12 @@ section .wave.wave1 {
   height: 70px;
   width: 350px;
   border-radius: 100px 100px 0 0;
-  background-color: rgba(127, 35, 35);
+  /* background-color: rgba(127, 35, 35); */
+  background-image: radial-gradient(
+    rgb(4, 51, 8),
+    rgb(79, 47, 47),
+    rgba(133, 64, 64)
+  );
   z-index: 1000;
 }
 
@@ -192,6 +245,21 @@ section .wave.wave1 {
   position: absolute;
   /* top: -100px; */
   bottom: 40px;
+}
+
+.trees .coconut2 {
+  position: absolute;
+  /* top: -100px; */
+  bottom: 30px;
+  right: 10px;
+  height: 300px;
+}
+
+.trees .coconut3 {
+  position: absolute;
+  /* top: -100px; */
+  bottom: 40px;
+  right: -10px;
 }
 
 /* .diver {
@@ -207,12 +275,12 @@ section .wave.wave1 {
 }
 
 .diver .diver2 {
-  height: 200px;
+  height: 180px;
   position: absolute;
   bottom: 10px;
   animation: diver2 16s linear infinite;
   margin: auto;
-  left: 40%;
+  left: 44%;
 }
 
 @keyframes diver1 {
@@ -272,8 +340,48 @@ section .wave.wave1 {
 .plants .plant6 {
   height: 100px;
   position: absolute;
+  bottom: -14px;
+  right: 500px;
+}
+
+.plants .plant7 {
+  height: 100px;
+  position: absolute;
+  bottom: -14px;
+  right: -3px;
+}
+
+.plants .plant8 {
+  position: absolute;
+  bottom: -25px;
+  height: 150px;
+  left: 50px;
+}
+
+.plants .plant9 {
+  height: 50px;
+  position: absolute;
   bottom: 0;
-  right: 75px;
+  right: 455px;
+}
+
+.plants .plant10 {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 475px;
+}
+.plants .plant11 {
+  position: absolute;
+  bottom: -25px;
+  height: 100px;
+  right: 600px;
+}
+.plants .plant12 {
+  position: absolute;
+  bottom: -125px;
+  height: 300px;
+  right: 800px;
 }
 
 .stone {
@@ -283,29 +391,29 @@ section .wave.wave1 {
 }
 
 .fishes .fish1 {
-  height: 50px;
+  height: 30px;
   position: absolute;
   bottom: 0;
-  animation: fish1 15s linear infinite;
+  animation: fish1 33s linear infinite;
 }
 
 .fish2 {
   height: 50px;
   position: absolute;
-  bottom: 0;
+  bottom: 146px;
   animation: fish1 50s linear infinite;
 }
 
 .fish3 {
   height: 50px;
   position: absolute;
-  bottom: 15px;
+  bottom: 175px;
   animation: fish1 55s linear infinite;
 }
 .fish4 {
   height: 50px;
   position: absolute;
-  bottom: -10px;
+  bottom: 190px;
   animation: fish1 45s linear infinite;
 }
 
@@ -341,6 +449,26 @@ section .wave.wave1 {
   /* animation: fish1 45s linear infinite; */
 }
 
+.fish10 {
+  height: 38px;
+  position: absolute;
+  bottom: 40px;
+  right: 580px;
+}
+
+.fish11 {
+  height: 28px;
+  position: absolute;
+  bottom: 140px;
+  animation: fish11 180s linear infinite;
+}
+
+.fish12 {
+  height: 28px;
+  position: absolute;
+  bottom: 90px;
+  animation: fish12 100s linear infinite;
+}
 @keyframes fish1 {
   from {
     margin-left: 10px;
@@ -391,5 +519,21 @@ section .wave.wave1 {
   }
   to {
     margin-left: 10px;
+  }
+}
+@keyframes fish11 {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 1400px;
+  }
+}
+@keyframes fish12 {
+  from {
+    margin-left: 10px;
+  }
+  to {
+    margin-left: 1400px;
   }
 }

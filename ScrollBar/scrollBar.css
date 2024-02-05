@@ -1,0 +1,106 @@
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(51, 226, 241), rgb(10, 88, 243));
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(96, 240, 240);
+}
+
+.hscrollmenu {
+  background-color: #6e2e43;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.hscrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.hscrollmenu a:hover {
+  background-color: #f63dcb;
+}
+
+.hscrollmenu::-webkit-scrollbar {
+  width: 15px;
+}
+
+.hscrollmenu::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(237, 85, 224), rgb(132, 32, 125));
+  border-radius: 10px;
+}
+
+.hscrollmenu::-webkit-scrollbar-track {
+  background: rgb(251, 167, 239);
+}
+
+.vscroll {
+  margin: auto;
+  border: solid 2px orange;
+  margin-top: 60px;
+  width: 60%;
+  height: 200px;
+  padding: 20px;
+  overflow: auto;
+  color: rgb(7, 1, 1);
+  background-color: rgb(255, 255, 142);
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  scrollbar-color: rgb(204, 6, 39);
+}
+
+.vscroll::-webkit-scrollbar {
+  width: 15px;
+}
+
+.vscroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(235, 40, 73), rgb(255, 161, 20));
+  border-radius: 10px;
+}
+
+.vscroll::-webkit-scrollbar-track {
+  background: rgb(231, 240, 96);
+}
+
+.vhscroll {
+  margin: auto;
+  border: solid 2px rgb(0, 255, 247);
+  margin-top: 60px;
+  width: 60%;
+  height: 100px;
+  padding: 20px;
+  overflow: hidden;
+  color: rgb(2, 71, 21);
+  background-color: rgb(163, 255, 142);
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.vhscroll:hover {
+  overflow-y: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-color: rgb(157, 49, 67);
+  scrollbar-width: thin;
+}
+
+.vhscroll::-webkit-scrollbar {
+  width: 15px;
+}
+
+.vhscroll::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(20, 155, 81), rgb(10, 230, 21));
+  border-radius: 10px;
+}
+
+.vhscroll::-webkit-scrollbar-track {
+  background: rgb(142, 245, 176);
+}
